@@ -1,7 +1,19 @@
 {{> header}}
-<div class="row">
-	<div class="small-12 columns">
-		<p>Filter test content</p>
-	</div>
+<div class="row" id="filter-row">
+	Filter products:
+	<form>
+		<label>Color</label>
+		<select id="color" class="filter-option">
+			<option value="">- select one -</option>
+		</select>
+		<label>Category</label>
+		<select id="category" class="filter-option">
+			<option value="">- select one -</option>
+		</select>
+	</form>
+	<a href="#" id="filter_reset">Reset Filter</a>
+</div>
+<div class="row small-up-2 medium-up-3 large-up-5" id="products-row">
+	
 </div>
 {{> footer}}
