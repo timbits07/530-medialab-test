@@ -1,0 +1,21 @@
+#filter-row {
+	padding-top: 3rem;
+	form {
+		label {
+			width: 60px;
+			display: inline-block;
+		}
+		select {
+			width: 200px;
+			display: inline-block;
+			margin-right: 1.5rem;
+		}
+	}
+}
+
+#products-row {
+	padding-top: 2rem;
+	.column {
+		clear: none !important;
+	}
+}
