@@ -1,8 +1,94 @@
 .header {
-	.top-bar{
+	.title-bar {
+		background: #FFF;
+		color: #000;
+		text-align: center;
+		.logo {
+			width: 70px;
+		}
+		.menu-toggle {
+			position: absolute;
+    	left: 10px;
+    	top: 31px;
+			cursor: pointer;
+		}
+	}
+	.top-bar {
+		background-color: #FFF;
+		ul {
+			background-color: #FFF;
+			li a {
+				color: #000;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-size: 0.9rem;
+			}
+		}
 		.top-bar-left {
+			.logo {
+				margin-right: 3rem;
+			}
 			.menu {
 				display: inline-block;
+				vertical-align: bottom;
+				@media screen and (max-width: 40rem) {
+					li {
+						width: 100%;
+						display: block;
+					}
+				}
+			}
+		}
+		.top-bar-right {
+			.social-links {
+				list-style: none;
+				margin-bottom: 60px;
+				li {
+					display: inline-block;
+					float: right;
+					margin-left: 12px;
+					a {
+						font-size: 1.15rem;
+						color: #646464;
+					}
+				}
+			}
+			.search-form {
+				position: relative;
+				input {
+					margin-right: 0px;
+				}
+				input[type="search"] {
+					width: 250px;
+					background-color: #EEE;
+					border-radius: 5px;
+					height: 2rem;
+					border: none;
+				}
+				input[type="search"]::-webkit-input-placeholder {
+				  font-weight: bold;
+				  color: #353535;
+				}
+				input[type="search"]:-moz-placeholder { /* Firefox 18- */
+				  font-weight: bold;
+				  color: #353535; 
+				}
+				input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
+				  font-weight: bold;
+				  color: #353535; 
+				}
+				input[type="search"]:-ms-input-placeholder {  
+				  font-weight: bold; 
+				  color: #353535;
+				}
+				input[type="image"] {
+					width: auto;
+				}
+				#search {
+					position: absolute;
+					right: 7px;
+    			top: 6px;
+				}
 			}
 		}
 	}

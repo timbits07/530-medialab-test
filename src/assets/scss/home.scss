@@ -1,11 +1,74 @@
 #home-hero-row {
 	background: url(../img/Homepage_Hero_1.jpg);
-	min-height: 300px;
+	min-height: 700px;
 	width: 100%;
 	padding: 0px;
 	max-width: 100%;
+	@media screen and (max-width: 40rem) {
+		min-height: 250px;
+		background: #FFF
+	}
+	.hero-text {
+		max-width: 850px; 
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: 30%;
+		h1 {
+			color: #FFF;
+			font-size: 3.5rem;
+			line-height: 3.5rem;
+		}
+		p {
+			color: #FFF;
+		}
+		.hero-cta {
+			color: $accent-color;
+			text-transform: uppercase;
+			background: rgba(39,39,39,0.8);
+			padding: 10px 15px;
+			font-size: 0.9rem;
+    	font-weight: bold;
+		}
+		@media screen and (max-width: 40rem) {
+			position: static;
+			text-align: center;
+			padding: 15px;
+			h1 {
+				color: #000;
+				font-size: 2.5rem;
+				line-height: 2.5rem;
+			}
+			p {
+				color: #000;
+			}
+		}
+	}
 }
 
-.three-pack {
+.three-pack-row {
 	padding-top: 2rem;
+	.three-pack {
+		.accent-text {
+			color: $accent-color;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+    	font-weight: bold;
+    	margin-top: 1.25rem;
+    	margin-bottom: 10px;
+		}
+		h3 {
+			font-weight: 100;
+		}
+	}
+	@media screen and (max-width: 40rem) {
+		.three-pack {
+			text-align: center;
+			h3 {
+				margin-top: 1rem;
+				font-size: 2rem;
+			}
+		}
+	}
 }
